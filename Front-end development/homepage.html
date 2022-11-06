@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
     body{
         background-color: cyan;
         font-family: "ariel", sans-serif
-
     }
     footer {
         background: #333333;
@@ -24,24 +24,27 @@
         font-family: arial;
     }
 
-    .footerLinks {
-        overflow: hidden;
-    }
 
-    .footerLinks ul {
-        padding: 0;
+    .menu-bar {
         list-style-type: none;
         margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: darkseagreen;
     }
-
-    .footerLinks li {
+    .menu-bar li{
         display: inline;
+        float: left;
     }
-
-    .footerLinks a {
-        color: #d9d9d9;
+    .menu-bar li a{
+        display: block;
+        color: blue;
+        text-align: center;
+        padding: 14px 16px;
         text-decoration: none;
-        font-size: 23px;
+    }
+    .menu-bar li a:hover {
+        background-color: coral;
     }
 
     .copyright {
@@ -54,31 +57,30 @@
         font-size: 11px;
     }
 
-    .menu-bar li {
-        display: inline-block;
-        margin: 0;
-        margin-right: 5px;
-    }
 </style>
 <body class="w3-cyan">
 <!-- Header -->
-<header class="w3-display-container w3-content w3-center w3-cyan" style="max-width:100%;padding:60px 16px 10px">
-    <img class="w3-image" src="logo.png" alt="SEMO logo" width="30%" height="30%">
+<header class="w3-display-container w3-content w3-center w3-cyan" style="max-width:100%;padding:0px 16px">
+    <div class="footerLinks">
+        <ul class="menu-bar">
+            <li class="nav-item">
+                <a class="active"  href="homepage.html"><i class="fa fa-fw fa-home"></i>Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="product.html"><i class="fa fa-fw fa-product-hunt"></i>Product</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class="fa fa-fw fa-envelope"></i>About</a>
+            </li>
+        </ul>
+    </div>
+    <img class="w3-image" src="logo.png" alt="SEMO logo" width="20%" height="20%">
     <h1> Yuri Group Shopping website </h1>
 </header>
-<div class="footerLinks">
-    <ul class="menu-bar">
-        <li>
-            <a id="home"  href="homepage.html">Home</a>
-        </li>
-        <li>
-            <a id="New product" href="product.html">Product</a>
-        </li>
-        <li>
-            <a id="about" href="about.html">About</a>
-        </li>
-    </ul>
-</div>
+
 <footer>
     <div>
         <div class="copyright">
