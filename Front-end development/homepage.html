@@ -2,13 +2,22 @@
 <html lang="en" >
 <head>
     <meta charset="UTF-8">
-    <title>Semo shopping website</title>
+    <title>SEMO shopping website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 </head>
 <style>
+    body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
     body{
         background-color: cyan;
     }
@@ -55,17 +64,49 @@
         font-size: 11px;
     }
     .clothes h2{
-        front-size:10px;
+        font-size: 40px;
         font-family: "Times New Roman",fantasy;
     }
     .food h3{
-        front-size:10px;
+        font-size:40px;
         font-family: "Times New Roman",fantasy;
     }
     .Electronic h4{
-        front-size:10px;
+        font-size:40px;
         font-family: "Times New Roman",fantasy;
     }
+
+    .swiper {
+        width: 400px;
+        height: 450px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background:coral;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 
 
 </style>
@@ -88,13 +129,32 @@
             </li>
         </ul>
     </div>
-    <img class="w3-image" src="logo.png" alt="SEMO logo" width="669" height="278">
+    <img class="w3-image" src="logo.png" alt="SEMO logo" width="20%" height="20%">
     <h1> Yuri Group Shopping website </h1>
 </header>
+
 <div class="clothes">
     <h2>Clothes</h2>
 </div>
 
+
+<!-- Write a Rolling clothes pictures playing in homepage -->
+<div class="swiper clothes">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="clothes/1.jpg"></div>
+      <div class="swiper-slide"><img src="clothes/2.jpg"></div>
+      <div class="swiper-slide"><img src="clothes/3.png"></div>
+      <div class="swiper-slide"><img src="clothes/4.png"></div>
+      <div class="swiper-slide"><img src="clothes/5.png"></div>
+      <div class="swiper-slide"><img src="clothes/6.png"></div>
+      ...
+    </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
 
 <div class="food">
     <h3>Food</h3>
@@ -113,6 +173,16 @@
     </div>
 </footer>
 
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+  });
+  </script>
 </body>
 </html>
