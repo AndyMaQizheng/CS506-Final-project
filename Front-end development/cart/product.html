@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    .menu-bar li{
+        display: inline;
+        float: left;
+    }
+    .menu-bar li a{
+        display: block;
+        color: blue;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .menu-bar li a:hover {
+        background-color: coral;
+    }
+</style>
+
+<body>
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">SEMO Shopping</h1>
+            <ul class="nav">
+                <li><a class="home" href="../mainpage/homepage.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                <li><a class="cart" href="cart.html"><i class="fa fa-fw fa-shopping-cart"></i>Cart <span class="count"></span></a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html"><i class="fa fa-fw fa-product-hunt"></i>Product</a>
+                </li>
+                <li>
+                    <a href="../account/login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about.html"><i class="fa fa-fw fa-envelope"></i>About</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="product-list">
+
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="product.js"></script>
+
+
+</body>
+</html>
