@@ -1,0 +1,49 @@
+<DOCTYPE html>
+  <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+  <div class="center">
+    <h1>Login</h1>
+    <form method="post">
+      <div class="txt_field">
+        <input type="email" name="email" id="email"  required>
+        <label>Email</label>
+      </div>
+      <div class="txt_field">
+        <input type="password" name="Password" id="Password" required>
+        <label>Password</label>
+      </div>
+      <div class="pass">Forgot Password?</div>
+      <button type="submit" class="button_login" onclick="login(event)">Login</button>
+      <div class="signup_link">
+        Not a Member? <a href="signup.html">Signup</a>
+      </div>
+    </form>
+  </div>
+  <script>
+    function login(event){
+      // Get html elements
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("Password").value;
+      event.preventDefault();
+
+      if (!password || !email ) {
+        alert("Must enter user name and password!");
+      }
+      if (email === "andyma@gmail.com" && password === "1234"){
+        window.location.replace("../homepage.html");
+      } else{
+        alert("Wrong email address or password!");
+        return;
+      }
+    }
+  </script>
+  </body>
+  </html>
+</DOCTYPE>
+
+
