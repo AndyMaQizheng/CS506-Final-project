@@ -7,7 +7,7 @@
     },
 
     {"source": "/home",
-      "destination": ".../mainpage/homepage.html"
+      "destination": "./homepage.html"
     }
   ],
   "routes": [

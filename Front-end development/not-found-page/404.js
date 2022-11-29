@@ -1,5 +1,5 @@
 const fs = require("fs");
-const NOT_FOUND_PATH = "/mot-found-page/404.html";
+const NOT_FOUND_PATH = "../mot-found-page/404.html";
 
 module.exports = (req, res) => {
     res.status(404).json({ message: 'Not Found' });
