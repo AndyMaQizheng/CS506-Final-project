@@ -3,15 +3,15 @@
   "trailingSlash": false,
   "rewrites": [
     { "source": "/api/(.*)",
-      "destination": "/not-found-page/404.js"
+      "destination": "../not-found-page/404.js"
     },
 
     {"source": "/home",
-      "destination": "/mainpage/homepage.html"
+      "destination": ".../mainpage/homepage.html"
     }
   ],
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404, "dest": "/not-found-page/404.html" }
+    { "src": "/(.*)", "status": 404, "dest": "../not-found-page/404.html" }
   ]
 }
