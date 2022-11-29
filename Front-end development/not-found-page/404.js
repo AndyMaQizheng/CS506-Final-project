@@ -1,11 +1,11 @@
 const fs = require("fs");
 const NOT_FOUND_PATH = "../mot-found-page/404.html";
 
-module.exports = (req, res) => {
+/*module.exports = (req, res) => {
     res.status(404).json({ message: 'Not Found' });
-};
+};*/
 
-/*module.exports = function(eleventyConfig) {
+module.exports = function(eleventyConfig) {
     eleventyConfig.setBrowserSyncConfig({
         callbacks: {
             ready: function(err, bs) {
@@ -25,4 +25,4 @@ module.exports = (req, res) => {
             }
         }
     });
-};*/
+};
