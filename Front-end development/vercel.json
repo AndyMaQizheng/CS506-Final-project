@@ -1,7 +1,7 @@
 {
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/404.js" }],
+  "rewrites": [{ "source": "/api/(.*)", "destination": "/not-found-page/404.js" }],
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404, "dest": "/other-404.html" }
+    { "src": "/(.*)", "status": 404, "dest": "/not-found-page/404.html" }
   ]
 }
