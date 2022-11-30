@@ -6,7 +6,7 @@
       "destination": "../not-found-page/404.js"
     },
 
-    {"source": "",
+    {"source": "/home",
       "destination": "../homepage.html"
     },
 
