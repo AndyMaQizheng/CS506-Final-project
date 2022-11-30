@@ -6,8 +6,12 @@
       "destination": "../not-found-page/404.js"
     },
 
+    {"source": "",
+      "destination": "../homepage.html"
+    },
+
     {"source": "/account/log in",
-      "destination": "../account/login,html"
+      "destination": "../account/login.html"
     },
     {"source": "/account/sign up",
       "destination": "../account/signup.html"
