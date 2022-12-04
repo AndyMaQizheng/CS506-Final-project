@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.navbar {
+    font-size: 1.2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    background-color: coral;
+}
+
+.navbar .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 4rem;
+}
+
+.navbar .logo {
+    width: 10%;
+    height: 10%;
+    align-self: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+
+}
+
+.navbar .nav {
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .nav a {
+    padding: 0 1rem;
+}
+
+.navbar .nav a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+.product-list {
+    margin: 3rem 0;
+    min-width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.product-item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.product-item button {
+    border: none;
+    outline: 0;
+    padding: 0.8rem;
+    color: white;
+    background-color: rgb(19, 18, 18);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.product-item button:hover {
+    background-color: rgb(56, 53, 53);
+}
+
+.product-price {
+    color: grey;
+    font-size: large;
+}
+
+.product-info {
+    line-height: 1.6;
+    padding: 0.2rem 0;
+}
+
+.product-img img {
+    width: 250px;
+    display: block;
+}
+
+td img {
+    height: 120px;
+}
+
+table {
+    width: 100%;
+}
+
+.table-cart {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.table-cart thead {
+    text-align: center;
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+
+.table-cart thead tr td {
+    padding: 0.5rem;
+}
+
+.table-cart tbody tr td:not(:first-child) {
+    text-align: center;
+}
+
+.table-cart tbody tr td:first-child {
+    text-indent: 1rem;
+}
+
+.btn {
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid;
+    width: 1.5rem;
+    font-size: larger;
+    outline: none;
+    padding-bottom: 2px;
+    border-radius: 0;
+}
+
+.btn:hover {
+    background-color: whitesmoke;
+}
+
+.btn-delete {
+    border: none;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 10%;
+}
+
+.btn-delete:hover {
+    border: none;
+    background-color: rgb(226, 10, 10);
+    color: aliceblue;
+    border-radius: 10%;
+}
+
+.display-none {
+    display: none;
+}
+
+
+.total {
+    text-align: right;
+}
+
+
+.button{
+    background: linear-gradient(
+            135deg
+            , #753370 0%, #298096 100%);
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    width:100%;
+    letter-spacing: .11rem;
+    outline:none;
+}
+
+.button:hover
+{
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 3px 3px 6px #38373785;
+}
+@media only screen and (max-width: 1000px) {
+    .card{
+        flex-direction: column;
+        width: auto;
+
+    }
+
+    .leftside{
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius:0;
+        border-radius:0;
+    }
+
+    .rightside{
+        width:auto;
+        border-bottom-left-radius: 1.5rem;
+        padding:0.5rem 3rem 3rem 2rem;
+        border-radius:0;
+    }
+}
