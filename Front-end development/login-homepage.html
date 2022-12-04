@@ -184,7 +184,7 @@
                     <a class="nav-link" href="cart/product.html"><i class="fa fa-fw fa-product-hunt"></i>Product</a>
                 </li>
                 <li>
-                    <a href="account/login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+                    <a href="./homepage.html"><i class="fa fa-fw fa-user"></i>Logout</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html"><i class="fa fa-fw fa-envelope"></i>About</a>
@@ -286,6 +286,11 @@
             clickable: true,
         },
     });
+    signOut(auth).then(() => {
+               // Sign-out successful.
+        }).catch((error) => {
+            // An error happened.
+        });
 </script>
 </body>
 </html>
