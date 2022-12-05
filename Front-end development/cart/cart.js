@@ -202,9 +202,11 @@ var shopping = {
 
     changeProductQuantity(id, quantity = 1){
         let item = this.getProduct(id),
-            totalPrice = localStorage.getItem('totalPrice');
+            totalPrice = localStorage.getItem('totalPrice'),tax=localStorage.getItem('tax'),totalp=localStorage.getItem('total');
 
         total1 = parseFloat(totalPrice) + item.price * quantity;
+        tax1=parseFloat(tax)+total1*0.15;
+        total2=parseFloat(totalp)+total1+tax1;
         item.inCart += quantity;
         if(item.inCart == 0){
             // bo product ra localStorage
@@ -221,7 +223,8 @@ var shopping = {
         }
         this.products[id -1].inCart = item.inCart;
 
-        this.loadCart(total1.toFixed(2));
+        this.loadCart(total1.toFixed(2),tax1.toFixed(2),total2.toFixed(2));
+
     },
 
     loadCart(totalPrice=0,tax=0,total=0){
@@ -231,8 +234,10 @@ var shopping = {
         localStorage.setItem('tax', tax);
         console.log('total price' + localStorage.getItem('total'));
         localStorage.setItem('total', total);
+
         let countCart= JSON.parse(localStorage.getItem('productInCart')).length;
         localStorage.setItem('countCart', countCart);
+
         let count = $('.count');
         count.empty();
         if(localStorage.getItem('countCart') > 100){
@@ -281,7 +286,7 @@ var shopping = {
             let product = shopping.getProduct($(this).attr('id'));
             if (product.inCart > 1){
                 shopping.changeProductQuantity($(this).attr('id'), -1);
-                // shopping.renderCart();
+                //shopping.renderCart();
             }
         });
         $('.btn-increase').click(function(){
