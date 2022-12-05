@@ -305,6 +305,7 @@ var shopping = {
     getProduct(id){
         for(item of this.products)
             if(item.id == id) return item;
+
     },
 
     getProductIndexById(id){
