@@ -7,14 +7,14 @@
     },
 
     {"source": "/home",
-      "destination": "../homepage.html"
+      "destination": "./index.html"
     },
 
     {"source": "/account/log in",
-      "destination": "../account/login.html"
+      "destination": "./login.html"
     },
     {"source": "/account/sign up",
-      "destination": "../account/signup.html"
+      "destination": "./signup.html"
     },
     {"source": "/cart",
       "destination": "../cart/cart.html"
