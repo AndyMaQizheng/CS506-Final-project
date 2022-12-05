@@ -28,7 +28,7 @@ a {
     font-size: 1.2rem;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
-    background-color: lightgray;
+    background-color: coral;
 }
 
 .navbar .container {
@@ -38,8 +38,13 @@ a {
 }
 
 .navbar .logo {
-    font-size: 2rem;
+    width: 10%;
+    height: 10%;
     align-self: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+
 }
 
 .navbar .nav {
@@ -166,33 +171,6 @@ table {
     display: none;
 }
 
-input[type="number"] {
-    outline: none;
-    width: 50px;
-    height: 26px;
-    border: 1px solid;
-    border-left: none;
-    border-right: none;
-    font-size: 16px;
-    font-weight: 400;
-    box-sizing: border-box;
-    text-align: center;
-    cursor: text;
-    border-radius: 0;
-    /* padding: 2px 0; */
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-/* Firefox */
-input[type="number"] {
-    -moz-appearance: textfield;
-}
 
 .total {
     text-align: right;
@@ -227,4 +205,18 @@ input[type="number"] {
 
     }
 
+    .leftside{
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius:0;
+        border-radius:0;
+    }
+
+    .rightside{
+        width:auto;
+        border-bottom-left-radius: 1.5rem;
+        padding:0.5rem 3rem 3rem 2rem;
+        border-radius:0;
+    }
 }

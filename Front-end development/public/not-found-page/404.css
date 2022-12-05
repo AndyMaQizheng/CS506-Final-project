@@ -1,0 +1,14 @@
+*{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    vertical-align: center;
+}
+
+h1{
+    font-size: 40px;
+}
+
+p{
+    font-size: 28px;
+}
