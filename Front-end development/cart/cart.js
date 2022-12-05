@@ -225,6 +225,7 @@ var shopping = {
 
         this.loadCart(total1.toFixed(2),tax1.toFixed(2),total2.toFixed(2));
 
+
     },
 
     loadCart(totalPrice=0,tax=0,total=0){
