@@ -279,7 +279,6 @@ var shopping = {
         $('.Tax').text('$' +   parseFloat(localStorage.getItem('tax')).toFixed(2));
         $('.total-price').text('$' + parseFloat(localStorage.getItem('total')).toFixed(2));
         this.addEventToCard();
-
     },
 
     addEventToCard(){
